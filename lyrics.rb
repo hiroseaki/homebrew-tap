@@ -5,20 +5,20 @@
 class Lyrics < Formula
   desc "Find and print song lyrics in your terminal"
   homepage "https://github.com/hiroseaki/lyrics-cli"
-  version "0.1.3"
+  version "0.2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/hiroseaki/lyrics-cli/releases/download/v0.1.3/lyrics_0.1.3_darwin_amd64.tar.gz"
-      sha256 "6fa8c34855d54a7ec2c6ce905f9157f72887793c294c714c2e93d2ee117bdb34"
+      url "https://github.com/hiroseaki/lyrics-cli/releases/download/v0.2.0/lyrics_0.2.0_darwin_amd64.tar.gz"
+      sha256 "beb9b06e3fc86771e824475f5c36610249ea75e944aeddd92d5f05ca3945bcce"
 
       define_method(:install) do
         bin.install "lyrics"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/hiroseaki/lyrics-cli/releases/download/v0.1.3/lyrics_0.1.3_darwin_arm64.tar.gz"
-      sha256 "bf999c59519ac084a333cd250367b732a8a275041393ba3f9250153a8ecbf9fa"
+      url "https://github.com/hiroseaki/lyrics-cli/releases/download/v0.2.0/lyrics_0.2.0_darwin_arm64.tar.gz"
+      sha256 "fa93904650e525b51fa725997a093e7489caaebdf0bc2673a374b7cea197980b"
 
       define_method(:install) do
         bin.install "lyrics"
@@ -28,15 +28,15 @@ class Lyrics < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/hiroseaki/lyrics-cli/releases/download/v0.1.3/lyrics_0.1.3_linux_amd64.tar.gz"
-      sha256 "a8916f2faa5effb67624191a3c16790aabebed50b9f41ef08c7743fce991163f"
+      url "https://github.com/hiroseaki/lyrics-cli/releases/download/v0.2.0/lyrics_0.2.0_linux_amd64.tar.gz"
+      sha256 "c8407ddab1eb28b0854cc6147653ee079b13d7a373741f1d890ef0927e098746"
       define_method(:install) do
         bin.install "lyrics"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/hiroseaki/lyrics-cli/releases/download/v0.1.3/lyrics_0.1.3_linux_arm64.tar.gz"
-      sha256 "bec2588d39c2c10cd88395bddbe5a2e08ee5aaeeb32121df9eaa96427d238325"
+      url "https://github.com/hiroseaki/lyrics-cli/releases/download/v0.2.0/lyrics_0.2.0_linux_arm64.tar.gz"
+      sha256 "6ba1b04606a2c96a323811fc11b8c65bc577fdf3467d515860b252785022cdee"
       define_method(:install) do
         bin.install "lyrics"
       end
